@@ -1,6 +1,15 @@
 module.exports = {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    tailwindcss: {
+        content: [
+            "./resources/**/*.blade.php",
+            "./resources/**/*.js",
+            "./resources/**/*.css",
+            "./resources/**/*.vue",
+        ],
+    },
+    autoprefixer: {
+        grid: true,
+    },
   },
 }
