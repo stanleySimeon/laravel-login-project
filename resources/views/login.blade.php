@@ -15,7 +15,7 @@
     <div class="container-fluid w-full h-screen flex">
         <div class="container w-6/12 relative">
             <img src="{{URL::asset('/images/background.AVIF')}}" alt="background" class="h-full w-full z-10 absolute left-0 right-0 mr-auto ml-auto">
-            <div class="bg-black w-full h-full z-20 absolute left-0 right-0 mr-auto ml-auto opacity-75"></div>
+            <div class="bg-black w-full h-full z-20 absolute left-0 right-0 mr-auto ml-auto opacity-80"></div>
             <div class="w-full h-full z-30 absolute flex flex-col justify-center items-center left-0 right-0 mr-auto ml-auto px-16">
                 <div class="flex items-baseline space-x-2">
                     <span class="w-32 border-b border-orange-600"></span>
