@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
-    <title>Login</title>
+    <title>Register</title>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         </div>
         <div class="container w-6/12 px-16 flex flex-col justify-center">
             <div class="w-full bg-white rounded-md p-4 relative">
-                <h1 class="text-4xl text-gray-600 font-bold mb-6">Login</h1>
+                <h1 class="text-4xl text-gray-600 font-bold mb-4">Register</h1>
                 @if ($errors->any())
                 <div class="container bg-red-100 border border-red-400 text-red-700 p-4 my-8 rounded relative" role="alert">
                     <strong class="font-bold text-center">Whoops!</strong>
@@ -52,14 +52,20 @@
                 </div>
                 @endif
                 <div class="card-body">
-                    <form action="{{ route('users.userLogin') }}" method="POST">
+                    <form action="{{ route('users.store') }}" method="POST">
                         @csrf
                         <div class="flex flex-col space-y-3">
-                            <input type="text" name="email" id="email" placeholder="Email" autocomplete="off" class="border-b border-orange-600 outline-none w-full py-3" value="{{ old('email') }}">
-                            <input type="password" name="password" id="password" placeholder="Choose a password" autocomplete="off" class="border-b border-orange-600 outline-none w-full py-3" value="{{ old('password') }}">
+                            <input type="text" name="name" id="name" placeholder="Full Name" class="border-b border-orange-600 outline-none w-full py-3" value="{{ old('name') }}">
+                            <input type="text" name="email" id="email" placeholder="Email" class="border-b border-orange-600 outline-none w-full py-3" value="{{ old('email') }}">
+                            <input type="password" name="password" id="password" placeholder="Choose a password" class="border-b border-orange-600 outline-none w-full py-3" value="{{ old('password') }}">
+                            <input type="password" name="confirm_password" id="password_confirmation" placeholder="Confirm password" class="border-b border-orange-600 outline-none w-full py-3" value="{{ old('password_confirmation') }}">
+                            <div class="flex justify-start items-center space-x-2">
+                                <input type="checkbox" name="remember_token" class="h-12">
+                                <label for="remember" class="text-gray-600">Remember me</label>
+                            </div>
                         </div>
                         <div class="flex justify-end items-center">
-                            <button type="submit" class="w-full bg-orange-600 text-white hover:bg-orange-700 px-4 py-3 mt-4 rounded font-medium">Submit</button>
+                            <button type="submit" class="w-3/12 bg-orange-600 text-white hover:bg-orange-700 px-4 py-3 mt-2 rounded font-medium">Submit</button>
                         </div>
                     </form>
                 </div>
