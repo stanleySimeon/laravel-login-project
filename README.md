@@ -4,7 +4,12 @@
 
 ## Screenshots
 
-- Screenshot of the Login application
+- Register
+
+<img width="1437" alt="Screenshot 2023-01-17 at 01 31 13" src="https://user-images.githubusercontent.com/91237525/212827112-8979527f-0b81-4414-a644-d28fc50392e1.png">
+
+- Login
+<img width="1440" alt="Screenshot 2023-01-17 at 01 31 26" src="https://user-images.githubusercontent.com/91237525/212827175-116f004a-069a-444d-8298-10836e31551d.png">
 
 ## Getting Started
 
