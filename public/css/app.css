@@ -613,6 +613,9 @@ video {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .block {
   display: block;
 }
@@ -732,6 +735,15 @@ video {
 }
 .w-12 {
   width: 3rem;
+}
+.w-1\/2 {
+  width: 50%;
+}
+.w-1\/6 {
+  width: 16.666667%;
+}
+.w-1\/5 {
+  width: 20%;
 }
 .max-w-full {
   max-width: 100%;

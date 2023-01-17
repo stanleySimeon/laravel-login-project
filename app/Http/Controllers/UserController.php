@@ -18,6 +18,7 @@ class UserController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
+            'confirm_password' => 'required|same:password',
             'remember_token'
         ]);
 
@@ -25,9 +26,10 @@ class UserController extends Controller
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = $request->password;
+        $user->password = $request->confirm_password;
         $user->remember_token = $request->remember_token;
         $user->save();
-        return redirect('/login');
+        return redirect('/login')->with('success', 'You have been registered successfully');
     }
 
     public function UserLogin(Request $request)

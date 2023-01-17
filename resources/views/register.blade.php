@@ -26,12 +26,12 @@
                 <div class="container w-8/12 flex justify-between space-x-8">
                     <span class="w-6/12">
                         <a href="/">
-                            <button type=" button" class="w-full px-8 py-2 text-white border border-orange-600 bg-orange-600 rounded hover:bg-orange-700">REGISTER</button>
+                            <button type=" button" class="w-full px-8 py-3 text-white border border-orange-600 bg-orange-600 rounded hover:bg-orange-700">REGISTER</button>
                         </a>
                     </span>
                     <span class="w-6/12">
                         <a href="/login">
-                            <button type=" button" class="w-full px-8 py-2 text-white border border-orange-600 rounded hover:text-gray-400">LOGIN</button>
+                            <button type=" button" class="w-full px-8 py-3 text-white border border-orange-600 rounded hover:text-gray-400">LOGIN</button>
                         </a>
                     </span>
                 </div>
@@ -55,17 +55,17 @@
                     <form action="{{ route('users.store') }}" method="POST">
                         @csrf
                         <div class="flex flex-col space-y-3">
-                            <input type="text" name="name" id="name" placeholder="Full Name" class="border-b border-orange-600 outline-none w-full p-2" value="{{ old('name') }}">
-                            <input type="text" name="email" id="email" placeholder="Email" class="border-b border-orange-600 outline-none w-full p-2" value="{{ old('email') }}">
-                            <input type="password" name="password" id="password" placeholder="Choose a password" class="border-b border-orange-600 outline-none w-full p-2" value="{{ old('password') }}">
-                            <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirm password" class="border-b border-orange-600 outline-none w-full p-2" value="{{ old('password_confirmation') }}">
+                            <input type="text" name="name" id="name" placeholder="Full Name" class="border-b border-orange-600 outline-none w-full py-3" value="{{ old('name') }}">
+                            <input type="text" name="email" id="email" placeholder="Email" class="border-b border-orange-600 outline-none w-full py-3" value="{{ old('email') }}">
+                            <input type="password" name="password" id="password" placeholder="Choose a password" class="border-b border-orange-600 outline-none w-full py-3" value="{{ old('password') }}">
+                            <input type="password" name="confirm_password" id="password_confirmation" placeholder="Confirm password" class="border-b border-orange-600 outline-none w-full py-3" value="{{ old('password_confirmation') }}">
                             <div class="flex justify-start items-center space-x-2">
                                 <input type="checkbox" name="remember_token" class="h-12">
                                 <label for="remember" class="text-gray-600">Remember me</label>
                             </div>
                         </div>
                         <div class="flex justify-end items-center">
-                            <button type="submit" class="w-3/12 bg-orange-600 text-white hover:bg-orange-700 px-4 py-3 mt-4 rounded font-medium">Register</button>
+                            <button type="submit" class="w-3/12 bg-orange-600 text-white hover:bg-orange-700 px-4 py-3 mt-2 rounded font-medium">Submit</button>
                         </div>
                     </form>
                 </div>
