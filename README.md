@@ -1,6 +1,6 @@
 # Login Application
 
-> A simple login application built with Laravel and Tailwind CSS (a utility-first CSS framework for rapidly building custom designs) that allows users to register, login, logout and reset their password.
+> A simple login application built with Laravel and Tailwind CSS (a utility-first CSS framework for rapidly building custom designs) that allows users to register, login, and logout.
 
 ## Screenshots
 
