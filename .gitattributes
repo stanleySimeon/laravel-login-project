@@ -1,4 +1,4 @@
+*.js linguist-language=php
+linguist-language=php
 *.blade.php diff=html
 *.css diff=css
-*.js diff=js
-linguist-language=php
