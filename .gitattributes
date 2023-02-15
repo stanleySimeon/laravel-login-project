@@ -1,5 +1,5 @@
 *.blade.php diff=html
 *.css diff=css
-*.js diff=JavaScript
+*.js diff=js
 *.js linguist-language=php
 linguist-language=php
