@@ -1,5 +1,4 @@
-* text=auto
-
 *.blade.php diff=html
 *.css diff=css
+*.js linguist-language=PHP
 linguist-language=PHP
